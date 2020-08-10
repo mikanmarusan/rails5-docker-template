@@ -17,4 +17,15 @@ If you'd like to change minor version,  you can change the configuration file be
 
 - Dockerfile
 - Gemfile
-- docker-compose.yml 
+- docker-compose.yml
+
+## Usage
+
+All you have to id run below if you’ve installed this template as default 
+
+```
+$ docker-compose build
+$ docker-compose up
+```
+
+If you'll install another gem packages, you fix the Gemfile and the run `bundle install`
