@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  rails:
+    build: .
+    container_name: rails
+    depends_on:
+      - mysql
+    volumes:
+      - .:/myapp
+    ports:
+      - "3000:3000"
+    links:
+      - mysql
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+
+  mysql:
+    image: mysql:5.7.31
+    container_name: mysql
+    volumes:
+      - ./tmp/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: database
+    ports:
+      - "3306:3306"
