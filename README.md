@@ -21,7 +21,7 @@ If you'd like to change minor version,  you can change the configuration file be
 
 ## Usage
 
-All you have to id run below if you’ve installed this template as default 
+All you have to is to run below if you’ve installed this template as default 
 
 ```
 $ docker-compose build
