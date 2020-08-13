@@ -1,9 +1,15 @@
-# rails5-docker-template
-Rails5 template on the docker container
-
-## Description
+# rails5-docker-template: Rails5 template on the docker container
 
 This is the application template for Rails5 project that works on docker container.
+
+## Usage
+
+All you have to do is to run the following commands if you’ve installed this template as default 
+
+```
+$ docker-compose build
+$ docker-compose up
+```
 
 ## Requirements
 
@@ -19,13 +25,3 @@ If you'd like to change minor version,  you can change the configuration file be
 - Gemfile
 - docker-compose.yml
 
-## Usage
-
-All you have to is to run below if you’ve installed this template as default 
-
-```
-$ docker-compose build
-$ docker-compose up
-```
-
-If you'll install another gem packages, you fix the Gemfile and the run `bundle install`
